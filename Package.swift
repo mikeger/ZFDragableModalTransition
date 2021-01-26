@@ -5,11 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "ZFDragableModalTransition",
+    defaultLocalization: "en",
     platforms: [
-        .iOS(.v9),
-        .tvOS(.v9),
-        .macOS(.v10_10),
-        .watchOS(.v2),
+        .iOS(.v11),
     ],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
@@ -26,8 +24,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "ZFDragableModalTransition",
-            path: "ZFDragableModalTransition",
-            dependencies: []),
+            path: "ZFDragableModalTransition"
+        )
     ]
 )
 
