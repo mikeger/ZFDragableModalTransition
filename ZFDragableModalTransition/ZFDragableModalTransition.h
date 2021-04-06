@@ -20,4 +20,4 @@ FOUNDATION_EXPORT const unsigned char ZFDragableModalTransitionVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <ZFDragableModalTransition/PublicHeader.h>
 
-
+#import <ZFDragableModalTransition/ZFModalTransitionAnimator.h>
