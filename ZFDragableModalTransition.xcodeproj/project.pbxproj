@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		455343A21C27441F0013DD4D /* ZFDragableModalTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 455343A11C27441F0013DD4D /* ZFDragableModalTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		455343AB1C2744850013DD4D /* ZFModalTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 455343A91C2744850013DD4D /* ZFModalTransitionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ABB90CE261C3D6A004AA7C0 /* ZFModalTransitionAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABB90CC261C3D6A004AA7C0 /* ZFModalTransitionAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2ABB90CF261C3D6A004AA7C0 /* ZFDragableModalTransition.h in Headers */ = {isa = PBXBuildFile; fileRef = 2ABB90CD261C3D6A004AA7C0 /* ZFDragableModalTransition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		455343AC1C2744850013DD4D /* ZFModalTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 455343AA1C2744850013DD4D /* ZFModalTransitionAnimator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2ABB90CC261C3D6A004AA7C0 /* ZFModalTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFModalTransitionAnimator.h; sourceTree = "<group>"; };
+		2ABB90CD261C3D6A004AA7C0 /* ZFDragableModalTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFDragableModalTransition.h; sourceTree = "<group>"; };
 		4553439E1C27441F0013DD4D /* ZFDragableModalTransition.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZFDragableModalTransition.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		455343A11C27441F0013DD4D /* ZFDragableModalTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFDragableModalTransition.h; sourceTree = "<group>"; };
 		455343A31C27441F0013DD4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		455343A91C2744850013DD4D /* ZFModalTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZFModalTransitionAnimator.h; sourceTree = "<group>"; };
 		455343AA1C2744850013DD4D /* ZFModalTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZFModalTransitionAnimator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -31,6 +31,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2ABB90CB261C3D6A004AA7C0 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				2ABB90CC261C3D6A004AA7C0 /* ZFModalTransitionAnimator.h */,
+				2ABB90CD261C3D6A004AA7C0 /* ZFDragableModalTransition.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
 		455343941C27441F0013DD4D = {
 			isa = PBXGroup;
 			children = (
@@ -50,9 +59,8 @@
 		455343A01C27441F0013DD4D /* ZFDragableModalTransition */ = {
 			isa = PBXGroup;
 			children = (
-				455343A91C2744850013DD4D /* ZFModalTransitionAnimator.h */,
+				2ABB90CB261C3D6A004AA7C0 /* include */,
 				455343AA1C2744850013DD4D /* ZFModalTransitionAnimator.m */,
-				455343A11C27441F0013DD4D /* ZFDragableModalTransition.h */,
 				455343A31C27441F0013DD4D /* Info.plist */,
 			);
 			path = ZFDragableModalTransition;
@@ -65,8 +73,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				455343AB1C2744850013DD4D /* ZFModalTransitionAnimator.h in Headers */,
-				455343A21C27441F0013DD4D /* ZFDragableModalTransition.h in Headers */,
+				2ABB90CE261C3D6A004AA7C0 /* ZFModalTransitionAnimator.h in Headers */,
+				2ABB90CF261C3D6A004AA7C0 /* ZFDragableModalTransition.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +118,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 455343941C27441F0013DD4D;
