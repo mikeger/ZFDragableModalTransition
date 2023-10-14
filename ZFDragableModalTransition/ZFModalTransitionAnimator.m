@@ -30,12 +30,13 @@
         _behindViewScale = 0.9f;
         _behindViewAlpha = 1.0f;
         _transitionDuration = 0.8f;
-
+#if !defined(TARGET_OS_VISION) || !TARGET_OS_VISION
         [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
         [[NSNotificationCenter defaultCenter] addObserver:self
-                                                 selector:@selector(orientationChanged:)
-                                                     name:UIApplicationDidChangeStatusBarFrameNotification
-                                                   object:nil];
+                                             selector:@selector(orientationChanged:)
+                                                 name:UIApplicationDidChangeStatusBarFrameNotification
+                                               object:nil];
+#endif
     }
     return self;
 }
@@ -43,7 +44,10 @@
 - (void)dealloc
 {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
+#if (!defined(TARGET_OS_VISION) || !TARGET_OS_VISION)
     [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
+#endif
+
 }
 
 - (void)setDragable:(BOOL)dragable
